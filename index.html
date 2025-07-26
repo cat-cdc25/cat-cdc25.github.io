@@ -1,0 +1,260 @@
+<!doctype html>
+<html>
+	<style>
+		table {
+		  width: 100%;
+		  border-collapse: collapse;
+		  margin: 20px 0;
+		  font-size: 16px;
+		  text-align: left;
+		}
+		th, td {
+		  padding: 10px 20px;
+		  border: 1px solid #ddd;
+		}
+		th {
+		  background-color: #f4f4f4;
+		}
+		td[colspan] {
+		  text-align: center;
+		  font-weight: bold;
+		  background-color: #f9f9f9;
+		}
+		tbody tr:nth-child(even) {
+		  background-color: #f9f9f9;
+		}
+	  </style>
+	<head>
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-DHX9FD5RTS"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+		  gtag('config', 'G-DHX9FD5RTS');
+		</script>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+		<title>Control Architectures Theory (CAT) Workshop - CDC 2024</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<style>
+			h3 {
+				margin-bottom: 5px;
+			}
+			/* Shared styling for organizers and speakers */
+			.section {
+				text-align: center;
+				margin-top: 30px;
+			}
+			.container {
+				display: grid;
+				grid-template-columns: repeat(3, 1fr); /* Ensures 4 items per row */
+				gap: 20px;
+				justify-content: center;
+			}
+			.item {
+				text-align: center;
+			}
+			.item img {
+				width: 180px;
+				height: 180px;
+				border-radius: 25%; /* Ensures the image is circular */
+				object-fit: cover;
+				margin-bottom: 10px;
+			}
+			.item-name {
+				font-size: 14px;
+				font-weight: bold;
+			}
+		</style>
+	</head>
+
+	<body>
+		<h1>Control Architectures Theory (CAT) Workshop - CDC 2025</h1>
+
+		<!-- Organizers Section -->
+		<h3>Organizers</h3>
+		<div class="section">
+			<div class="container" style="grid-template-columns: repeat(3, 1fr);"> <!-- 3 per row for organizers -->
+				<div class="item">
+					<img src="pics/aaron-ames.png" alt="Aaron Ames">
+					<div class="item-name"><a href="http://ames.caltech.edu" target="_blank">Aaron Ames (Caltech)</a></div>
+				</div>
+				<div class="item">
+					<img src="pics/nikolai-matni.jpeg" alt="Nikolai Matni">
+					<div class="item-name"><a href="https://nikolaimatni.github.io" target="_blank">Nikolai Matni (UPenn)</a></div>
+				</div>
+				<div class="item">
+					<img src="pics/gioele-zardini.png" alt="Gioele Zardini">
+					<div class="item-name"><a href="https://zardini.mit.edu/people/prof-gioele-zardini/" target="_blank">Gioele Zardini (MIT)</a></div>
+				</div>
+			</div>
+		</div>
+
+		<h3>Relevant Info and Links</h3>
+		<ul>
+			<li><b>When?</b> On December 9, 2025.</li>
+			<li><b>Where?</b> At CDC 2025, <b>Room TBD</b></li>
+			<li><a href="https://cdc2025.ieeecss.org"> IEEE CDC 2025 Webpage </a></li>
+		</ul>
+
+		<h3>Motivation and Objectives</h3>
+The design and control of complex systems stands out as one of the paramount challenges of this century.
+Such systems are labeled as complex not only due to the intricacies of their individual components, but
+also because their functioning hinges on complex interactions among these components, across domains and
+scales. 
+To give a sense of the kind of systems we are interested in, think about the complex circuit governing
+a sensor employed in autonomous driving context, and autonomous vehicle which leverages the sensor, as
+well as a number of other complex hardware and software components within the autonomy stack, a fleet
+of autonomous vehicles of this kind, deployed and controlled following certain objectives, and interacting
+via a complex patterns, and a mobility system leveraging Autonomous Mobility-on-Demand (i.e., the fleet)
+systems as well as standard transit options. Each of these subsystems is complex to design and control per
+se, and is influenced and influences other ones at different scales.
+In this workshop we are driven by the need for a robust theory concerning <b>layered control architectures
+(LCAs)</b> across various complex systems, ranging from power systems and communication networks to autonomous
+robotics, bacteria, and human sensorimotor control. Such systems exhibit exceptional capabilities,
+yet lack a cohesive, compositional theory for analysis and design, primarily due to their diverse domains.
+Conversely, there exists a fundamental set of control concepts and theories which are universally applicable
+and can accommodate domain-specific adaptations. In this context, however, control methods are often
+limited to work for individual components of larger systems, lacking comprehensive theoretical foundations.<br><br>
+
+Although fragments of a control architecture theory have emerged across disparate disciplines and domains,
+a unified theory and community are lacking. Against this backdrop, the objective of this workshop is to cultivate a new interdisciplinary community
+which considers control architectures and systems theory as a central focus of study. In particular, we will
+bring together experts from a wide range of disciplines, spanning robotics, control, applied mathematics,
+systems biology, aerospace, etc., with the goal of establishing a common language and core set of challenge
+problems and techniques.
+A key outcome of the workshop will be a white paper laying out a research program in this area.
+
+
+		<!-- Speakers Section -->
+		<h3>Speakers</h3>
+		<div class="section">
+			<div class="container"> <!-- 4 per row for speakers -->
+				<div class="item">
+					<img src="pics/carmen-alonso.jpg.png" alt="Carmen Amo Alonso">
+					<div class="item-name"><a href="https://camoalon.github.io" target="_blank">Carmen Amo Alonso (Stanford University)</a></div>
+				</div>
+				<div class="item">
+					<img src="pics/antoine-girard.jpg" alt="Antoine Girard">
+					<div class="item-name"><a href="https://sites.google.com/site/antoinesgirard/?pli=1" target="_blank">Antoine Girard (CNRS)</a></div>
+				</div>
+				<div class="item">
+					<img src="pics/ali-jadbabaie.jpg" alt="Ali Jadbabaie">
+					<div class="item-name"><a href="https://jadbabaie.mit.edu" target="_blank">Ali Jadbabaie (MIT)</a></div>
+				</div>
+				<div class="item">
+					<img src="pics/pierluigi-nuzzo.jpg" alt="Pierluigi Nuzzo">
+					<div class="item-name"><a href="https://www2.eecs.berkeley.edu/Faculty/Homepages/pnuzzo.html" target="_blank">Pierluigi Nuzzo (UC Berkeley)</a></div>
+				</div>
+				<div class="item">
+					<img src="pics/alberto-padoan.png" alt="Alberto Padoan">
+					<div class="item-name"><a href="https://www.albertopadoan.com" target="_blank">Alberto Padoan (University of British Columbia)</a></div>
+				</div>
+				<div class="item">
+					<img src="pics/dimitra-panagou.jpg" alt="Dimitra Panagou">
+					<div class="item-name"><a href="https://aero.engin.umich.edu/people/panagou-dimitra/" target="_blank">Dimitra Panagou (University of Michigan)</a></div>
+				</div>
+				<div class="item">
+					<img src="pics/George-Pappas.png" alt="George Pappas">
+					<div class="item-name"><a href="https://www.georgejpappas.org" target="_blank">George Pappas (University of Pennsylvania)</a></div>
+				</div>
+				<div class="item">
+					<img src="pics/rodolphe-sepulchre.jpeg" alt="Rodolphe Sepulchre">
+					<div class="item-name"><a href="https://sites.google.com/site/rsepulchre/ro" target="_blank">Rodolphe Sepulchre (University of Cambridge and KU Leuven)</a></div>
+				</div>
+				<div class="item">
+					<img src="pics/maegan-tucker.png" alt="Maegan Tucker">
+					<div class="item-name"><a href="https://maegantucker.com" target="_blank">Maegan Tucker (Georgia Institute of Technology)</a></div>
+				</div>
+			</div>
+		</div>
+		
+
+	
+
+		<h3>Tentative Program</h3>
+		<p>
+			The workshop (full day, 8:45 am to 5:00 pm) will consist of a morning and afternoon session with talks from diverse speakers (both from
+academia and industry), and will conclude with a panel. Titles and order are TBD. <br><br>
+
+<table>
+    <thead>
+      <tr>
+        <th>Time</th>
+        <th>Speakers</th>
+        <th>Title</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>8:45</td>
+        <td>Aaron Ames, Nikolai Matni, Gioele Zardini</td>
+        <td>Introduction to the workshop</td>
+      </tr>
+      <tr>
+        <td>9:00</td>
+        <td>Dimitra Panagou</td>
+        <td>Autonomy Architectures for Safe Planning in Unknown Environments under Constraints</td>
+      </tr>
+      <tr>
+        <td>9:30</td>
+        <td>Rodolphe Sepulchre</td>
+        <td>System Modelling at Scale</td>
+      </tr>
+      <tr>
+        <td>10:00</td>
+        <td>Maegan Tucker</td>
+        <td>Multi-Objective Policy Exploration via Layered Architectures</td>
+      </tr>
+      <tr>
+        <td>10:30</td>
+        <td colspan="2">Coffee Break</td>
+      </tr>
+      <tr>
+        <td>11:00</td>
+        <td>Antoine Girard</td>
+        <td>Assume-Guarantee Contracts for Layered Control Architectures</td>
+      </tr>
+      <tr>
+        <td>11:30</td>
+        <td>Pierluigi Nuzzo</td>
+        <td>Contract-Based Modeling for the Design of Layered System Architectures</td>
+      </tr>
+	  <tr>
+        <td>12:00</td>
+        <td>Carmen Amo Alonso</td>
+        <td>Layering Language and Motor Control for Robotic Applications</td>
+      </tr>
+      <tr>
+        <td>12:30</td>
+        <td colspan="2">Lunch Break</td>
+      </tr>
+      <tr>
+        <td>14:00</td>
+        <td>George Pappas</td>
+        <td>TBD</td>
+      </tr>
+      <tr>
+        <td>14:30</td>
+        <td>Alberto Padoan</td>
+        <td>The Shape of Dynamics</td>
+      </tr>
+      <tr>
+        <td>15:00</td>
+        <td colspan="2">Coffee Break</td>
+      </tr>
+      <tr>
+        <td>15:30</td>
+        <td>Ali Jadbabaie</td>
+        <td>TBD</td>
+      </tr>
+        <td>16:00</td>
+        <td>Various speakers</td>
+        <td>Panel Discussion</td>
+      </tr>
+    </tbody>
+  </table>
+
+		</p>
+	</body>
+</html>
